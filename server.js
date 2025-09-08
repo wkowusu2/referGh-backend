@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // Socket.IO setup with CORS
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:8080", // Vite dev server
+        origin: "https://refer-ghana-9w25ozixq-tooknown27-4065s-projects.vercel.app", // Vite dev server
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true
     }
@@ -21,7 +21,7 @@ const io = new Server(server, {
 
 // Middleware
 app.use(cors({
-    origin: "http://localhost:8080",
+    origin: "https://refer-ghana-9w25ozixq-tooknown27-4065s-projects.vercel.app",
     credentials: true
 }));
 app.use(express.json());
